@@ -1,15 +1,54 @@
 
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* color: white !important; */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
 }
+
+.nav-link {
+    color: white !important;
+    letter-spacing: 0.1em;
+}
+
+.nav-link:hover {
+    opacity: .5;
+}
+
 
 .bg-1-parallax {
     height: 100vh;
-    background-image: url('../images/high-rise-building.jpg');
+    background-image: url('../images/modern-building.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.title-wrapper {
+    position: absolute;
+    width: 800px;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.page-title-wrapper {
+    color: rgb(212, 212, 212);
+    text-align: center;
+}
+
+h1.page-title {
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.page-desc-wrapper {
+    margin-left: 141px;
+}
+
+h4.page-desc {
+    color: white;
 }
