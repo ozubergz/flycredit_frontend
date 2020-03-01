@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                <NavBar />
+
+const Home = () => {
+    return (
+        <div>
+            <NavBar />
+            <div className="home-bg-1">
+                <div className="bg-1-parallax"></div>
             </div>
-        );
-    }
+            <div style={{height: '1000px'}}></div>
+        </div>
+    );
 }
 
 export default Home;
