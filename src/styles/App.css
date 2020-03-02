@@ -7,7 +7,7 @@
 
 .nav-link {
     color: white !important;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3rem;
 }
 
 .nav-link:hover {
@@ -25,7 +25,7 @@
     background-size: cover;
 }
 
-.title-wrapper {
+.section-1 > .title-wrapper {
     position: absolute;
     width: 800px;
     top: 20%;
@@ -34,9 +34,14 @@
     transform: translateX(-50%);
 }
 
-.page-title-wrapper {
+.section-1 > .title-wrapper > .page-title-wrapper {
     color: rgb(212, 212, 212);
     text-align: center;
+}
+
+.section-1 > .title-wrapper > .page-desc-wrapper {
+    margin-left: 141px;
+    color: white;
 }
 
 h1.page-title {
@@ -46,33 +51,38 @@ h1.page-title {
     letter-spacing: .65rem;
 }
 
-.page-desc-wrapper {
-    margin-left: 141px;
-    color: white;
-}
-
 h4.page-desc {
     color: white;
 }
 
 /****************** SECTION-2 *****************/
 
-
 .section-2 {
-    text-align: center;
-    padding: 3%;
     color: rgb(70, 70, 70);
-
 }
 
-.section-2 > h1 {
+.section2-desc-wrapper {
+    text-align: center;
+}
+
+.section2-desc-wrapper > h1 {
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3rem;
     font-weight: bolder;
 }
 
-.section-2 > .desc-wrapper {
-    margin: auto;
-    width: 85%;
-    font-size: 1.1rem;
+.section2-desc-wrapper > .desc-body {
+    font-size: 1.2rem;
+    font-family: 'Spectral', Arial, Helvetica, sans-serif;
+}
+
+/****************** SECTION-2 *****************/
+
+.section-3 {
+    height: 100vh;
+    background-image: url('../images/white-flower.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
