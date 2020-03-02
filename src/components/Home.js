@@ -33,17 +33,24 @@ class Home extends Component {
                 <div className="section-1" ref={ section => this.section = section }>
                     <div className="title-wrapper">
                         <div className="page-title-wrapper">
-                            <h1 className="page-title">Fly Credit</h1>
+                            <h1 className="page-title">Fly.Credit</h1>
                         </div>
                         <div className="page-desc-wrapper">
                             <h4 className="page-desc">Build Your Business</h4>
-                            <h4 className="page-desc">Get Finance</h4>
-                            <h4 className="page-desc">Get Credit</h4>
                         </div>
                     </div>
                 </div>
-                <div className="section-2" style={{height: '1000px'}} >
-                    
+                <div className="section-2">
+                    <h1>What we do.</h1>
+                    <div className="desc-wrapper">
+                        <p>We help entrepreneurs obtain the capital and credit they need to fuel
+                        their business. Walk through all the necessary steps to setup your business
+                        credibly to meet credit issuer and lender approval criteria. We help
+                        you get business credit for your EIN that’s not linked to your SSN with no 
+                        personal credit check. We help you get approved for credit lines and loans
+                        to start and grow your company.
+                        </p>
+                    </div>
                 </div>
             </div>
         );

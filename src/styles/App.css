@@ -1,3 +1,5 @@
+/****************** NAVBAR *****************/
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2%;
@@ -11,6 +13,8 @@
 .nav-link:hover {
     opacity: .5;
 }
+
+/****************** SECTION-1 *****************/
 
 .section-1 {
     height: 100vh;
@@ -39,7 +43,7 @@ h1.page-title {
     font-size: 82px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: .65rem;
 }
 
 .page-desc-wrapper {
@@ -49,5 +53,26 @@ h1.page-title {
 
 h4.page-desc {
     color: white;
-    margin-bottom: -1.5em;
+}
+
+/****************** SECTION-2 *****************/
+
+
+.section-2 {
+    text-align: center;
+    padding: 3%;
+    color: rgb(70, 70, 70);
+
+}
+
+.section-2 > h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+}
+
+.section-2 > .desc-wrapper {
+    margin: auto;
+    width: 85%;
+    font-size: 1.1rem;
 }
