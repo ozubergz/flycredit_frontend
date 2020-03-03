@@ -1,36 +1,55 @@
+// import React, {useRef, useEffect, useState } from 'react';
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 
 
 class Home extends Component {
+    // const elemRef = useRef();
+    // const [refs, setRefs] = useState();
 
-    state = {
-        height: 0
-    }
+    // useEffect(() => {
+    //     // elemRef.current.addEve('scroll', handleScroll);
+    //     // elemRef.current.addEventListener('scroll', handleScroll)
+    //     console.log(elemRef)
+    //     // setRefs
+    //     // console.log(elemRef)
+    // });
 
+    // const handleScroll = () => {        
+    //     let scroll = window.scrollY;
+        
+    //     // console.log(window.scrollY)
+    // }
+
+    sectionRef = React.createRef();
+    
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
-        this.setState({height: this.section.clientHeight});
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
     }
 
-    handleScroll = () => {
-        let scroll = window.scrollY;
-        let height = this.state.height;
-        let velocity = 13;
-        let position = `${50 + (scroll / height) * velocity}%`;        
-        this.section.style.backgroundPosition = `50% ${position}`;
+    // handleScroll = () => {
+    //     // let scroll = window.scrollY;
+    //     // let height = this.section.clientHeight;
+    //     // let velocity = 13;
+    //     // let position = `${50 + (scroll / height) * velocity}%`;        
+    //     // this.section.style.backgroundPosition = `50% ${position}`;
+    // }
+
+    attachRefs = (el) => {
+        this.sectionRef.current = el;
+        console.log(this.sectionRef)
     }
+   
     
     render() {
-        console.log(this.state.height)
         return (
             <div>
                 <NavBar />
-                <div className="section-1" ref={ section => this.section = section }>
+                <div className="section-1" ref={this.attachRefs}>
                     <div className="title-wrapper">
                         <div className="page-title-wrapper">
                             <h1 className="page-title">Fly.Credit</h1>
@@ -56,8 +75,10 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className="section-3">
-                    
+                <div className="section-3" ref={this.attachRefs}>
+                    <div className="title-wrapper">
+                        <h1 className="page-title">Grow Your Business.</h1>
+                    </div>
                 </div>
             </div>
         );
