@@ -80,7 +80,7 @@ h4.page-desc {
 
 .section-3 {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     background-image: url('../images/white-flower.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -89,10 +89,6 @@ h4.page-desc {
 }
 
 .section-3 > .title-wrapper {
-    /* width: 300px; */
-    /* position: absolute;
-    top: 15%;
-    left: 30%; */
     position: absolute;
     top: 50%;
     left: 50%;
